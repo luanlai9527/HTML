@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<title>品类折扣-海带世界</title>
+		<meta content="品类折扣,海带世界" name="keywords" />
+		<meta content="品类折扣,海带世界" name="description" />
+
+		<script>
+			 (function(){
+          // 判断ie版本小于10时，升级ie浏览器
+          var browser = navigator.appName;
+          var b_version = navigator.appVersion;
+          var version = b_version.split(";");
+          if (version.length > 1) {
+              var trim_Version = parseInt(version[1].replace(/[ ]/g, "").replace(/MSIE/g, ""));
+              if (trim_Version <= 9) {
+                  alert("您的IE浏览器版本过低，不能访问,请您升级；");
+                  location.href = 'https://www.microsoft.com/zh-tw/download/internet-explorer.aspx';
+              }
+          }
+       })();
+		</script>
+		
+		<!--css样式-->
+		<link rel="stylesheet" href="/static/css/public/normalize.css">
+		<link rel="stylesheet" href="/static/css/public/flex.css">
+		<link rel="stylesheet" href="/static/css/public/public.css">
+		<link rel="stylesheet" href="/static/font/ionicons/css/ionicons.min.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/public/reset.css">
+
+		<!--swiper.js 插件样式库-->
+		<link rel="stylesheet" href="/static/css/lib/swiper.min.css">
+
+		<!--页面css-->
+		<link rel="stylesheet" href="/static/css/pages/hdsj.css">
+
+		<!--基础js-->
+		<script src="/static/js/require.js"></script>
+		<script src="/static/js/config.js"></script>
+
+
+		<script>
+			/*产品图片自适应*/
+			function imgLoadFn (img){
+				var soureWidth = img.width;
+				var soureHeight = img.height;
+
+				var constSize = '100%';
+
+				if(soureWidth/soureHeight > 1){
+					img.style.width = constSize;
+				} else if(soureWidth/soureHeight < 1){
+					img.style.height = constSize;
+				} else {}
+			}
+		</script>
+
+	</head>
+	<body >
+		<div class="header">
+			<div class="header_main">
+				<div class="header_title">淘大家喜欢的海外折扣商品</div>
+				<div>
+						<div class="header_nav">
+			              <a href="/" class="header_active">
+			                      <div>网站折扣</div>
+			              </a>
+			              <a href="/" >
+			                      <div>品类折扣</div>
+			              </a>
+			              <a href="/" >
+			                      <div>品牌折扣</div>
+			              </a>
+			      </div>
+				</div>
+				<div class="header_search">
+					<div class="header_input">
+						<input type="text" placeholder="关键字搜索" />
+					</div>
+					<div class="search_btn">
+						<img src="./static/img/base/search.png"  alt=""/>
+					</div>
+				</div>
+				<div class="header_right">
+					<div class="header_personal">
+						<img src="static/img/base/login.png"  alt=""/>
+					</div>
+					<div class="header_login"><a  href="javascript:void(0)">登录</a></div>
+					<div class="header_line">|</div>
+					<div class="header_register"><a href="register.html">注册</a></div>
+				</div>
+
+
+			</div>
+		</div>
+		<!--内容-->
+		<div class="h-container-box">
+			<div id="h-list-box">
+				<div class="h-c-item">
+					<div class="h-c-item-header">
+						<div flex="dir:left main:left cross:center" >
+							<img src="/static/img/hdsj/kh.png" class="img1" flex-box="0">
+							<div class="txt" flex-box="1">
+								<div>美国梅西百货</div>
+								<div class="h-c-item-descri" flex="dir:left main:left cross:center">
+									<img src="/static/img/hdsj/zk-icon.png" class="img" flex-box="0">
+									<div flex-box="1" class="txt">黑五好价，全场低至1.5折，活动截止至11月30日</div>
+								</div>
+							</div>
+							<a href="#" class="all" flex-box="0">全部<i class="ion-ios-arrow-forward"></i></a>
+						</div>
+					</div>
+					<!-- Swiper -->
+				  <div class="hdsj-swiper-container">
+				    <div class="swiper-wrapper">
+				      <div class="swiper-slide">
+				      	<ul class="h-c-ul-box">
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      	</ul>
+				      </div>
+				      <div class="swiper-slide">
+				      	<ul class="h-c-ul-box">
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      	</ul>
+				      </div>
+				      <div class="swiper-slide">
+				      	<ul class="h-c-ul-box">
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      	</ul>
+				      </div>
+				      <div class="swiper-slide">
+				      	<ul class="h-c-ul-box">
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      	</ul>
+				      </div>
+				    </div>
+				    <!-- Add Pagination -->
+				    <div class="swiper-pagination"></div>
+				  </div>
+				</div>
+				<div class="h-c-item">
+					<div class="h-c-item-header">
+						<div flex="dir:left main:left cross:center" >
+							<img src="/static/img/hdsj/kh.png" class="img1" flex-box="0">
+							<div class="txt" flex-box="1">
+								<div>美国梅西百货</div>
+								<div class="h-c-item-descri" flex="dir:left main:left cross:center">
+									<img src="/static/img/hdsj/zk-icon.png" class="img" flex-box="0">
+									<div flex-box="1" class="txt">黑五好价，全场低至1.5折，活动截止至11月30日</div>
+								</div>
+							</div>
+							<a href="#" class="all" flex-box="0">全部<i class="ion-ios-arrow-forward"></i></a>
+						</div>
+					</div>
+					<!-- Swiper -->
+				  <div class="hdsj-swiper-container">
+				    <div class="swiper-wrapper">
+				      <div class="swiper-slide">
+				      	<ul class="h-c-ul-box">
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      	</ul>
+				      </div>
+				      <div class="swiper-slide">
+				      	<ul class="h-c-ul-box">
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      	</ul>
+				      </div>
+				      <div class="swiper-slide">
+				      	<ul class="h-c-ul-box">
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      	</ul>
+				      </div>
+				      <div class="swiper-slide">
+				      	<ul class="h-c-ul-box">
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      	</ul>
+				      </div>
+				    </div>
+				    <!-- Add Pagination -->
+				    <div class="swiper-pagination"></div>
+				  </div>
+				</div>
+				<div class="h-c-item">
+					<div class="h-c-item-header">
+						<div flex="dir:left main:left cross:center" >
+							<img src="/static/img/hdsj/kh.png" class="img1" flex-box="0">
+							<div class="txt" flex-box="1">
+								<div>美国梅西百货</div>
+								<div class="h-c-item-descri" flex="dir:left main:left cross:center">
+									<img src="/static/img/hdsj/zk-icon.png" class="img" flex-box="0">
+									<div flex-box="1" class="txt">黑五好价，全场低至1.5折，活动截止至11月30日</div>
+								</div>
+							</div>
+							<a href="#" class="all" flex-box="0">全部<i class="ion-ios-arrow-forward"></i></a>
+						</div>
+					</div>
+					<!-- Swiper -->
+				  <div class="hdsj-swiper-container">
+				    <div class="swiper-wrapper">
+				      <div class="swiper-slide">
+				      	<ul class="h-c-ul-box">
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      	</ul>
+				      </div>
+				      <div class="swiper-slide">
+				      	<ul class="h-c-ul-box">
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      	</ul>
+				      </div>
+				      <div class="swiper-slide">
+				      	<ul class="h-c-ul-box">
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      	</ul>
+				      </div>
+				      <div class="swiper-slide">
+				      	<ul class="h-c-ul-box">
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      	</ul>
+				      </div>
+				    </div>
+				    <!-- Add Pagination -->
+				    <div class="swiper-pagination"></div>
+				  </div>
+				</div>
+				<div class="h-c-item">
+					<div class="h-c-item-header">
+						<div flex="dir:left main:left cross:center" >
+							<img src="/static/img/hdsj/kh.png" class="img1" flex-box="0">
+							<div class="txt" flex-box="1">
+								<div>美国梅西百货</div>
+								<div class="h-c-item-descri" flex="dir:left main:left cross:center">
+									<img src="/static/img/hdsj/zk-icon.png" class="img" flex-box="0">
+									<div flex-box="1" class="txt">黑五好价，全场低至1.5折，活动截止至11月30日</div>
+								</div>
+							</div>
+							<a href="#" class="all" flex-box="0">全部<i class="ion-ios-arrow-forward"></i></a>
+						</div>
+					</div>
+					<!-- Swiper -->
+				  <div class="hdsj-swiper-container">
+				    <div class="swiper-wrapper">
+				      <div class="swiper-slide">
+				      	<ul class="h-c-ul-box">
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      	</ul>
+				      </div>
+				      <div class="swiper-slide">
+				      	<ul class="h-c-ul-box">
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      	</ul>
+				      </div>
+				      <div class="swiper-slide">
+				      	<ul class="h-c-ul-box">
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      	</ul>
+				      </div>
+				      <div class="swiper-slide">
+				      	<ul class="h-c-ul-box">
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      		<li class="h-c-ul-item">
+				      			<div class="pp-c-ul-i-shadow">
+				      				<div class="img-box" flex="dir:left main:center cross:center">
+					      				<img src="/static/img/hdsj/good.jpg" onload="imgLoadFn(this)">
+					      			</div>
+					      			<div class="title-box">$ <span class="price1">70.00</span><span class="price2">$ 88.00</span></div>
+					      			<p class="descri1">Estee Lauder 超值礼包</p>
+					      			<p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p>
+					      			<a href="#" target="_blank" class="link">直达链接</a>
+				      			</div>
+				      		</li>
+				      	</ul>
+				      </div>
+				    </div>
+				    <!-- Add Pagination -->
+				    <div class="swiper-pagination"></div>
+				  </div>
+				</div>
+			</div>
+			<input type="hidden" value="1" id="next_page">
+			<div class="h-load-tip" style="display: block;">加载数据中...</div>
+			
+		</div>
+		<!--内容结束--->
+		<!-- 登录弹窗 -->
+			
+		<div class="shade login_show"></div>
+		<div class="logins login_show">
+			<div class="login_main">
+				<div class="login_dialog">
+					<div class="login_header">登录
+					<img src="static/img/base/close.png"  class="login_close"  alt=""/>
+					</div>
+					<div class="login_contant">
+					<div class="login_phones">
+						<div class="login_name">账号</div>
+						<div class="login_input">
+					<input type="text" placeholder="昵称/手机号码" />
+						</div>
+						</div>	
+						<div class="login_phone">
+							<div class="login_name">密码</div>
+							<div class="login_input">
+						<input type="password" placeholder="请输入密码" />
+							</div>
+							</div>	
+						<div class="login_reset">
+							<div class="no_numbers">
+								<div class="no_number">还没有账号？</div>
+								<div class="right_away">
+									<a href="register.html">立即注册>></a>
+									</div>
+							</div>
+							<div class="no_number">
+								<a href="reset_passwords.html">忘记密码？</a>
+								</div>	
+						</div>	
+						<div class="login_sure">登录</div>		
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="c_footer">
+			<div class="footer_text">
+				<a href="privacy.html" class="privacy">隐私条款</a>
+				<a href="disclaimer.html" class="disclaimer">免责声明</a>
+			</div>
+			<div class="copy">CopyRight © 2020 LOGO.com</div>
+		</div>
+
+		<!--返回顶部-->
+		<div class="goToTop">
+			<img src="/static/img/public/goToTop.png" />
+		</div>
+
+		<!--页面js-->
+		<script type="text/javascript">
+			_load(['swiper.min'], function ($, _util, _swiper) {
+
+				// 登录显示弹窗
+				$('.header_login').on('click', function() {
+					$("body").addClass('fixs');
+					$('.shade').show()
+					$('.logins').show()
+				});
+
+				 // 登录关闭弹窗
+				$('.login_close').on('click', function() {
+					$("body").removeClass('fixs');
+					$('.shade').hide()
+					$('.logins').hide()
+					
+				});
+
+				// 初始化模块滚动事件
+				initSwiper();
+
+				// 滚动加载更多
+				var isLoad = false;
+        $(document).scroll(function() {
+            var scroH = $(document).scrollTop();  //滚动高度
+            var viewH = $(window).height();  //可见高度 
+            var contentH = $(document).height();  //内容高度
+            var loadTip = $('.h-load-tip');
+            var page = $('#next_page')
+
+            if (contentH <= (scroH + viewH + 50 + 0)){  //滚动条滑到底部啦
+                var next_page = page.val();
+
+                if(!isLoad && next_page!=='' && next_page != undefined){
+                    isLoad = true;
+                    loadTip.html('数据加载中...');
+                    _util._loading.show('加载数据中...');
+                    
+                    setTimeout(function(){
+                    	isLoad = false;
+                    	loadTip.hide();
+                    	page.val(parseInt(page.val()) + 1);
+
+                    	var len = 5;
+                    	var htmlStr = '';
+                    	for(var i=0; i<len; i++){
+                    		htmlStr += '<div class="h-c-item"><div class="h-c-item-header"><div flex="dir:left main:left cross:center"><img src="/static/img/hdsj/kh.png"class="img1"flex-box="0"><div class="txt"flex-box="1"><div>美国梅西百货</div><div class="h-c-item-descri"flex="dir:left main:left cross:center"><img src="/static/img/hdsj/zk-icon.png"class="img"flex-box="0"><div flex-box="1"class="txt">黑五好价，全场低至1.5折，活动截止至11月30日</div></div></div><a href="#"class="all"flex-box="0">全部<i class="ion-ios-arrow-forward"></i></a></div></div><!--Swiper--><div class="hdsj-swiper-container"><div class="swiper-wrapper"><div class="swiper-slide"><ul class="h-c-ul-box"><li class="h-c-ul-item"><div class="pp-c-ul-i-shadow"><div class="img-box"flex="dir:left main:center cross:center"><img src="/static/img/hdsj/good.jpg"onload="imgLoadFn(this)"></div><div class="title-box">$<span class="price1">70.00</span><span class="price2">$ 88.00</span></div><p class="descri1">Estee Lauder超值礼包</p><p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p><a href="#"target="_blank"class="link">直达链接</a></div></li><li class="h-c-ul-item"><div class="pp-c-ul-i-shadow"><div class="img-box"flex="dir:left main:center cross:center"><img src="/static/img/hdsj/good.jpg"onload="imgLoadFn(this)"></div><div class="title-box">$<span class="price1">70.00</span><span class="price2">$ 88.00</span></div><p class="descri1">Estee Lauder超值礼包</p><p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p><a href="#"target="_blank"class="link">直达链接</a></div></li><li class="h-c-ul-item"><div class="pp-c-ul-i-shadow"><div class="img-box"flex="dir:left main:center cross:center"><img src="/static/img/hdsj/good.jpg"onload="imgLoadFn(this)"></div><div class="title-box">$<span class="price1">70.00</span><span class="price2">$ 88.00</span></div><p class="descri1">Estee Lauder超值礼包</p><p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p><a href="#"target="_blank"class="link">直达链接</a></div></li><li class="h-c-ul-item"><div class="pp-c-ul-i-shadow"><div class="img-box"flex="dir:left main:center cross:center"><img src="/static/img/hdsj/good.jpg"onload="imgLoadFn(this)"></div><div class="title-box">$<span class="price1">70.00</span><span class="price2">$ 88.00</span></div><p class="descri1">Estee Lauder超值礼包</p><p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p><a href="#"target="_blank"class="link">直达链接</a></div></li></ul></div><div class="swiper-slide"><ul class="h-c-ul-box"><li class="h-c-ul-item"><div class="pp-c-ul-i-shadow"><div class="img-box"flex="dir:left main:center cross:center"><img src="/static/img/hdsj/good.jpg"onload="imgLoadFn(this)"></div><div class="title-box">$<span class="price1">70.00</span><span class="price2">$ 88.00</span></div><p class="descri1">Estee Lauder超值礼包</p><p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p><a href="#"target="_blank"class="link">直达链接</a></div></li><li class="h-c-ul-item"><div class="pp-c-ul-i-shadow"><div class="img-box"flex="dir:left main:center cross:center"><img src="/static/img/hdsj/good.jpg"onload="imgLoadFn(this)"></div><div class="title-box">$<span class="price1">70.00</span><span class="price2">$ 88.00</span></div><p class="descri1">Estee Lauder超值礼包</p><p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p><a href="#"target="_blank"class="link">直达链接</a></div></li><li class="h-c-ul-item"><div class="pp-c-ul-i-shadow"><div class="img-box"flex="dir:left main:center cross:center"><img src="/static/img/hdsj/good.jpg"onload="imgLoadFn(this)"></div><div class="title-box">$<span class="price1">70.00</span><span class="price2">$ 88.00</span></div><p class="descri1">Estee Lauder超值礼包</p><p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p><a href="#"target="_blank"class="link">直达链接</a></div></li><li class="h-c-ul-item"><div class="pp-c-ul-i-shadow"><div class="img-box"flex="dir:left main:center cross:center"><img src="/static/img/hdsj/good.jpg"onload="imgLoadFn(this)"></div><div class="title-box">$<span class="price1">70.00</span><span class="price2">$ 88.00</span></div><p class="descri1">Estee Lauder超值礼包</p><p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p><a href="#"target="_blank"class="link">直达链接</a></div></li></ul></div><div class="swiper-slide"><ul class="h-c-ul-box"><li class="h-c-ul-item"><div class="pp-c-ul-i-shadow"><div class="img-box"flex="dir:left main:center cross:center"><img src="/static/img/hdsj/good.jpg"onload="imgLoadFn(this)"></div><div class="title-box">$<span class="price1">70.00</span><span class="price2">$ 88.00</span></div><p class="descri1">Estee Lauder超值礼包</p><p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p><a href="#"target="_blank"class="link">直达链接</a></div></li><li class="h-c-ul-item"><div class="pp-c-ul-i-shadow"><div class="img-box"flex="dir:left main:center cross:center"><img src="/static/img/hdsj/good.jpg"onload="imgLoadFn(this)"></div><div class="title-box">$<span class="price1">70.00</span><span class="price2">$ 88.00</span></div><p class="descri1">Estee Lauder超值礼包</p><p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p><a href="#"target="_blank"class="link">直达链接</a></div></li><li class="h-c-ul-item"><div class="pp-c-ul-i-shadow"><div class="img-box"flex="dir:left main:center cross:center"><img src="/static/img/hdsj/good.jpg"onload="imgLoadFn(this)"></div><div class="title-box">$<span class="price1">70.00</span><span class="price2">$ 88.00</span></div><p class="descri1">Estee Lauder超值礼包</p><p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p><a href="#"target="_blank"class="link">直达链接</a></div></li><li class="h-c-ul-item"><div class="pp-c-ul-i-shadow"><div class="img-box"flex="dir:left main:center cross:center"><img src="/static/img/hdsj/good.jpg"onload="imgLoadFn(this)"></div><div class="title-box">$<span class="price1">70.00</span><span class="price2">$ 88.00</span></div><p class="descri1">Estee Lauder超值礼包</p><p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p><a href="#"target="_blank"class="link">直达链接</a></div></li></ul></div><div class="swiper-slide"><ul class="h-c-ul-box"><li class="h-c-ul-item"><div class="pp-c-ul-i-shadow"><div class="img-box"flex="dir:left main:center cross:center"><img src="/static/img/hdsj/good.jpg"onload="imgLoadFn(this)"></div><div class="title-box">$<span class="price1">70.00</span><span class="price2">$ 88.00</span></div><p class="descri1">Estee Lauder超值礼包</p><p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p><a href="#"target="_blank"class="link">直达链接</a></div></li><li class="h-c-ul-item"><div class="pp-c-ul-i-shadow"><div class="img-box"flex="dir:left main:center cross:center"><img src="/static/img/hdsj/good.jpg"onload="imgLoadFn(this)"></div><div class="title-box">$<span class="price1">70.00</span><span class="price2">$ 88.00</span></div><p class="descri1">Estee Lauder超值礼包</p><p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p><a href="#"target="_blank"class="link">直达链接</a></div></li><li class="h-c-ul-item"><div class="pp-c-ul-i-shadow"><div class="img-box"flex="dir:left main:center cross:center"><img src="/static/img/hdsj/good.jpg"onload="imgLoadFn(this)"></div><div class="title-box">$<span class="price1">70.00</span><span class="price2">$ 88.00</span></div><p class="descri1">Estee Lauder超值礼包</p><p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p><a href="#"target="_blank"class="link">直达链接</a></div></li><li class="h-c-ul-item"><div class="pp-c-ul-i-shadow"><div class="img-box"flex="dir:left main:center cross:center"><img src="/static/img/hdsj/good.jpg"onload="imgLoadFn(this)"></div><div class="title-box">$<span class="price1">70.00</span><span class="price2">$ 88.00</span></div><p class="descri1">Estee Lauder超值礼包</p><p class="descri2"><span class="circle"></span>使用折扣码"EIGOLKKE"，享受8.5折<br><span class="circle"></span>截止时间11月9日</p><a href="#"target="_blank"class="link">直达链接</a></div></li></ul></div></div><!--Add Pagination--><div class="swiper-pagination"></div></div></div>';
+                    	}
+
+                    	$('#h-list-box').append(htmlStr);
+
+                    	// 设置已经加载全部了
+                    	if(page.val() == 3) {
+                    		page.val('');
+                    		loadTip.html('没有更多数据！');
+                    		loadTip.show();
+                    	}
+
+                    	setTimeout(function(){
+                  			// 初始化模块滚动事件
+												initSwiper();
+                  		}, 300);
+                  		_util._loading.hide();
+                    	
+
+                    }, 1000);
+                }else{
+                    loadTip.show();
+                }
+            }
+        });
+
+
+        // 初始化模块滚动事件
+				function initSwiper(){
+					var swiperArr = $('.hdsj-swiper-container');
+					var len = swiperArr.length;
+
+					for(var i=0; i<len; i++){
+						var item = swiperArr.eq(i);
+
+						if(!item.data('init')){
+							item.data('init', true);
+
+							new _swiper(item[0], {
+					      spaceBetween: 40,
+					      pagination: '.swiper-pagination',
+  							paginationClickable: true,
+  							speed: 3000,
+					    });
+						}
+					}
+				}
+
+
+		    // 返回顶部
+		    (function(){
+		    	$(window).on('scroll', function () {
+					  // 判断显示还是隐藏按钮
+					  if($(this).scrollTop()>=$(this).height()){
+					    $('.goToTop').fadeIn('slow');
+					  }else {
+					    $('.goToTop').fadeOut('slow');
+					  }
+					});
+					$('.goToTop').on('click',function () {
+					  // 设置滚动动画，这里注意使用的是$('body')不是$(window)
+					  $("body,html").animate({scrollTop:0},500)
+					});
+		    })();
+		    
+
+			});
+		</script>
+	</body>
+</html>

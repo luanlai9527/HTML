@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "929140",
+      "name": "cc-visa",
+      "font_class": "ccvisa",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "1898612",
+      "name": "cc-paypal",
+      "font_class": "cc-paypal",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    }
+  ]
+}

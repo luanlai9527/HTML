@@ -1,0 +1,21 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1571126421837'); /* IE9 */
+  src: url('iconfont.eot?t=1571126421837#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAARsAAsAAAAACVwAAAQeAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqGaIVgATYCJAMICwYABCAFhG0HMBsGCFGUDEqW7COhus0e8yhTpmiCA8HMt45DKXl4uPd37lv/79o0J8ZtHhMwitI9EQOMAy2O3/y/p387ZsmMTHQnFGlX52QZ5GLwo79o/nGvavY6nw8ogAliaI6lH4PBcIACuEcX9ooVagNSL2AV2xFJoPKw3fwK0LXI+wTqhrigbMSlUAEkYxgCdxxz2DQApZyyGnaoWoqSvfWlGKWomjwnZwDw6T8+/oBXQCTylNGzfRTLBBG/NhbIt5atitM2rf35IQ6RYgGQEfulwU3yoX7BN9bLggrG6g0Zzvza/C9d5WwV+J8nCoaxic0DVLlPKlu9q8aEfj1Di5gA4lQqR2u/oTqSpcplhhp2RuYNsHilbrFYgiADMoM82Rr/R/KuR62/Rl284gfnyWQIsuao0bp6gIxrniqA+8W6hvrrr/lcuUJdvOq67ipy/bqBYZvHFsmk1Nkr/ZeuXx+42ACSSkHVP1OXmitdDcNisV4BVTylh6wx4MmmG2Zya5lMqg+vrF1xzW3fNVi1f61hrXgKQag1NRsMDPIMZI8jV6/n6cPW2wEKRbozG+wrYvQZe9lqBnwlq/T0QsSfddpq5uVWc5OSLGijSg10Stl4LWKulvjM8o562a5GqpnFjQ1pRh+tDWeUJiGND7kfJzijm19uVXeGylmoau5suGii/uZxexE0pZRWbxSnN1oCeuq0GLhu/oHZWGPnJPlUP/nSLtDMu4IblWdXXB+JDqQFa5ZFBZWn4ovrW6EcUa2c3jpN3tbZOJpCGsMkhEZ3frdAj/W41vzUo8ibjqqIcHSfY72xFcQyZ3wrDgYJg7qOxAfHS0sM90DlA/5hJdnQhis+5ewD836dvM/xDTZZYVpdKMRIUP3YOqKWA99HVndkmTmYHzVyi/xgVEdZf2I6sFu97JHNHP3VHv6Q5h0ofaUc7kAXDmv6GBH4b5fcxZj2drvvbDGIAJT/ytbOZvm2v2ue7+33sso0Qv4h5IvL/Jyek/haWBiovoNQ8C/ZOxtrUP+0qsbQJ5oBVdJqEhPU3pG9To0ogRHtdk/W2vfiqqGq7/WFKwZjSFVNoDP8AuQaFqFQtQx18+IPN/QgyIushjldCEKnLZBo+4JUp7PoDH8Xcv3eQqEz5KHuMHTObJgKDhxNYDQSY6L0OpTDEAlZeUg46MzC2FV8GpHU+PxcjKjkZFBPN49sJR4TYkQfGyqr2V4kyUJZhEiAxqGnYXy+CMUJERdjkG4VJIkHubuzyj7IjSESANg6AoaGhGFC0dVBcTCICLHc0SQ49/1ZMGxV+GiIGkRFMheGUIkzOcqTGw8AOt4oBCHOpb9SNTYvJMmzoFiiXUQAFUf8GL5ZFEHh5bO4MAwkNxUSeVwQdzKIBTW6jW8WXN0xqDNsSZiWKrZpdTiNDwAAAA==') format('woff2'),
+  url('iconfont.woff?t=1571126421837') format('woff'),
+  url('iconfont.ttf?t=1571126421837') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1571126421837#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Paypal:before {
+  content: "\ea24";
+}
+

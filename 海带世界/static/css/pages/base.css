@@ -1,0 +1,34 @@
+/* 隐私条款 免责声明*/
+.contant_{background: #f4f4f4;min-height: calc(100vh - 291px);padding-bottom: 60px;}
+.contant_nav{width: 1200px;margin: 0 auto;padding-top: 29px;display: flex;align-items: center;}
+.website{color:#C82A29;font-size: 16px;}
+.right_ico img{margin-left: 9px;margin-right: 7px;display: block;}
+.statement{color:#333333;font-size: 16px;}
+.disclaimers{width: 1120px;margin: 0 auto;margin-top: 29px;background: #FFFFFF;padding: 40px;}
+.disclaimers_titles{display: flex;justify-content: center;align-items: center;}
+.disclaimers_line{width: 40px;height: 1px;background:#C82A29;}
+.disclaimers_title{margin: 0 10px;font-size: 18px;color: #333333;}
+.segments{margin-top: 38px;color: #333333;font-size: 14px;line-height: 18px;}
+.segment{margin-top: 26px;}
+/* 注册 */
+.register{padding-top: 87px;width: 1200px;margin: 0 auto;}
+.register_contants{background: #FFFFFF;padding-bottom: 60px;}
+.register_header{height: 79px;border-bottom: 1px solid #DDDDDD;line-height: 79px;font-size: 24px;color: #333333;text-align: center;}
+.register_contant{width: 400px;margin: 0 auto;margin-top: 40px;}
+.pet_name{font-size: 18px;color: #333333;}
+.name_input input{border: none;outline: none;width: 100%;}
+.name_input{height: 50px;border: 1px solid #BBBBBB;padding:0 20px;line-height: 50px;border-radius: 5px;margin-top: 20px;font-size: 16px;}
+.register_phone{margin-top: 30px;}
+.codes{display: flex;border-radius: 5px;}
+.codes input{border: none;outline: none;width: 100%;}
+.code{width: 280px;height: 50px;border: 1px solid #BBBBBB;padding:0 20px;line-height: 50px;margin-top: 20px;font-size: 16px;border-radius: 5px 0px 0px 5px;}
+.code_btn{width: 120px;height: 52px;line-height: 52px;text-align: center;border-radius: 0px 5px 5px 0px;margin-top: 20px;color: #ffff;cursor: pointer;}
+.code_active{background: #C82A29;color: #FFFFFF;}
+.code_noactive{background: #CCCCCC;color: #FFFFFF}
+.register_sure{background:#C82A29;height: 50px;line-height: 50px;margin-top: 30px;color: #FFFFFF;text-align: center;font-size: 16px;border-radius: 5px;cursor: pointer;}
+.register_back{margin-top: 20px;display: flex;justify-content: center;align-items: center;font-size: 16px;}
+.register_back_login{font-size: 333333;}
+.register_login a{margin-left: 27px;color:#C82A29;}
+.reset_sures{display: flex;justify-content: space-between;font-size: 16px;margin-top: 30px;}
+.reset_sure{width: 148px;background:#C82A29;height: 50px;line-height: 50px;color: #FFFFFF;text-align: center;border-radius: 5px;cursor: pointer;}
+.reset_sure_back{width: 148px;height: 50px;line-height: 50px;;text-align: center;border: 1px solid #C82A29;border-radius: 5px;cursor: pointer;color:#C82A29}

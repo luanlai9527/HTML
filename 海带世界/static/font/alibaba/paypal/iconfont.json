@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3176823",
+      "name": "Paypal",
+      "font_class": "Paypal",
+      "unicode": "ea24",
+      "unicode_decimal": 59940
+    }
+  ]
+}

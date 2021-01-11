@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<title>优惠推荐</title>
+		<meta content="优惠推荐" name="keywords" />
+		<meta content="优惠推荐" name="description" />
+
+		<script>
+			(function(){
+          // 判断ie版本小于10时，升级ie浏览器
+          var browser = navigator.appName;
+          var b_version = navigator.appVersion;
+          var version = b_version.split(";");
+          if (version.length > 1) {
+              var trim_Version = parseInt(version[1].replace(/[ ]/g, "").replace(/MSIE/g, ""));
+              if (trim_Version <= 9) {
+                  alert("您的IE浏览器版本过低，不能访问,请您升级；");
+                  location.href = 'https://www.microsoft.com/zh-tw/download/internet-explorer.aspx';
+              }
+          }
+       })();
+		</script>
+
+		<!--css样式-->
+		<link rel="stylesheet" type="text/css" href="/static/css/public/normalize.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/public/flex.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/public/public.css">
+		<link rel="stylesheet" type="text/css" href="/static/font/ionicons/css/ionicons.min.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/public/reset.css">
+
+		<!--页面css-->
+		<link rel="stylesheet" type="text/css" href="/static/css/pages/base.css">
+		<!--基础js-->
+		<script src="/static/js/require.js"></script>
+		<script src="/static/js/config.js"></script>
+	</head>
+	<body>
+		<div>
+			<div class="header">
+				<div class="header_main">
+					<div class="header_title">淘大家喜欢的海外折扣商品</div>
+					<div>
+					<div class="header_nav">
+                                                        <a href="/" class="header_active">
+                                                                <div>网站折扣</div>
+                                                        </a>
+                                                        <a href="/" >
+                                                                <div>品类折扣</div>
+                                                        </a>
+                                                        <a href="/" >
+                                                                <div>品牌折扣</div>
+                                                        </a>
+                                                </div>
+					</div>
+					<div class="header_search">
+						<div class="header_input">
+							<input type="text" placeholder="关键字搜索"/>
+						</div>
+						<div class="search_btn">
+							<img src="./static/img/base/search.png"  alt=""/>
+						</div>
+					</div>
+					<div class="header_right">
+						<div class="header_personal">
+							<img src="static/img/base/login.png"  alt=""/>
+						</div>
+						<div class="header_login"><a  href="javascript:void(0)">登录</a></div>
+						<div class="header_line">|</div>
+					<div class="header_register"><a href="register.html">注册</a></div>
+					</div>
+
+
+				</div>
+			</div>
+			<div class="contant_">
+				<div class="contant_nav">
+					<a href="/" class="website">网站首页</a>
+					<div class="right_ico">
+						<img src="static/img/base/right_red.png"  alt="" />
+					</div>
+					<div class="statement">免责声明</div>
+				</div>
+				<div class="disclaimers">
+					<div class="disclaimers_titles">
+						<div class="disclaimers_line"></div>
+						<div class="disclaimers_title">免责声明</div>
+						<div class="disclaimers_line"></div>
+					</div>
+					<div class="segments">
+						<div class="segment">本网站上的信息由<a href="//haidaishijie.com" target="_blank">haidaishijie.com</a>提供。在我们努力使信息保持最新和正确的同时，我们对网站上的信息，产品，服务的完整性、准确性、可靠性、适用性或可用性不做任何形式的明示或暗示的陈述或保证，或出于任何目的包含在网站上的相关图形。因此，您对此类信息的任何依赖完全由您自担风险。</div>
+						<div class="segment">在任何情况下，我们概不负责任何损失或损害，包括但不限于间接或间接损失或损害，或者因使用本网站或与之有关而导致的数据或利润的损失而造成的任何损失或损害。</div>
+						<div class="segment">通过该网站，您可以链接到不受<a href="//haidaishijie.com" target="_blank">haidaishijie.com</a>控制的其他网站，我们无法控制这些网站的性质、内容和可用性。包含的任何链接并不一定意味着建议或认可其中表达的观点。</div>
+						<div class="segment">我们会尽一切努力使网站正常运行。但是，<a href="//haidaishijie.com" target="_blank">haidaishijie.com</a>网站对由于我们无法控制的技术问题而暂时无法使用该网站概不负责，也不对此承担任何责任。</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 登录弹窗 -->
+						
+						<div class="shade login_show"></div>
+						<div class="logins login_show">
+							<div class="login_main">
+								<div class="login_dialog">
+									<div class="login_header">登录
+									<img src="static/img/base/close.png"  class="login_close"  alt=""/>
+									</div>
+									<div class="login_contant">
+									<div class="login_phones">
+										<div class="login_name">账号</div>
+										<div class="login_input">
+									<input type="text" placeholder="昵称/手机号码" />
+										</div>
+										</div>	
+										<div class="login_phone">
+											<div class="login_name">密码</div>
+											<div class="login_input">
+										<input type="password" placeholder="请输入密码" />
+											</div>
+											</div>	
+										<div class="login_reset">
+											<div class="no_numbers">
+												<div class="no_number">还没有账号？</div>
+												<div class="right_away">
+													<a href="register.html">立即注册>></a>
+													</div>
+											</div>
+											<div class="no_number">
+												<a href="reset_passwords.html">忘记密码？</a>
+												</div>	
+										</div>	
+										<div class="login_sure">登录</div>		
+									</div>
+									
+								</div>
+							</div>
+						</div>
+			
+			
+			
+			
+			<div class="c_footer">
+				<div class="footer_text">
+					<a href="privacy.html" class="privacy">隐私条款</a>
+					<a href="disclaimer.html" class="disclaimer">免责声明</a>
+				</div>
+				<div class="copy">CopyRight © 2020 LOGO.com</div>
+			</div>
+		</div>
+
+
+		<script type="text/javascript">
+			_load([], function($, _util) {
+				var isLoad = false;
+
+			// 显示弹窗
+				$('.header_login').on('click', function() {
+					$("body").addClass('fixs');
+					$('.shade').show()
+					$('.logins').show()
+				});
+			// 关闭弹窗
+		$('.login_close').on('click', function() {
+			$("body").removeClass('fixs');
+			$('.shade').hide()
+			$('.logins').hide()
+			
+		});
+
+
+
+			});
+		</script>
+	</body>
+</html>
