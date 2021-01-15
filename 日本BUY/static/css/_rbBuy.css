@@ -315,10 +315,12 @@
 	padding-left: 18px;
 	display: block;
 	text-decoration: none;
-	border-bottom: solid 1px #DDDDDD;
 	cursor: pointer;
 }
-.rb-recommend-box .rb-left-box .rb-nav-box>li:last-child .item {
+.rb-recommend-box .rb-left-box .rb-nav-box>li {
+	border-bottom: solid 1px #DDDDDD;
+}
+.rb-recommend-box .rb-left-box .rb-nav-box>li:last-child{
 	border-bottom: none;
 }
 .rb-recommend-box .rb-left-box .item .ion-ios-arrow-down {
@@ -359,6 +361,7 @@
 }
 .rb-recommend-box .rb-left-box .sonMenu {
 	margin-left: 15px;
+	padding: 15px 0;
 }
 .rb-recommend-box .rb-left-box .sonMenu li a {
 	width: 100%;
