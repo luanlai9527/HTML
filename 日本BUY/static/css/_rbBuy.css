@@ -1170,6 +1170,8 @@
 .dr-l-container .link-box .txt1{
 	font-size: 20px;
 	color: #ff8000;
+	width: 200px;
+	display: block;
  }
 .dr-l-container  .txt-2 {
 	font-size: 16px;
@@ -1193,7 +1195,6 @@
 	font-weight: 400;
 	color: #ff8000;
 	cursor: pointer;
-	margin-left: 20px;
  }
  .dr-l-container .link-box .link1 {
  	background: #ff8000;
