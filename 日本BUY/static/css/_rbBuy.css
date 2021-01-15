@@ -343,7 +343,6 @@
 .rb-recommend-box .rb-left-box .item:hover {
 	color: #FFFFFF;
 	background: #FF8000;
-	border-color: #FF8000;
 }
 .rb-recommend-box .rb-left-box h3 {
 	line-height: 64px;
