@@ -304,7 +304,46 @@
 	width: 235px;
 	margin-right: 20px;
 	background: #fff;
-	padding: 20px 0;
+	padding: 0;
+}
+.rb-recommend-box .rb-left-box .item {
+	height: 64px;
+	line-height: 64px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #333333;
+	padding-left: 18px;
+	display: block;
+	text-decoration: none;
+	border-bottom: solid 1px #DDDDDD;
+	cursor: pointer;
+}
+.rb-recommend-box .rb-left-box .rb-nav-box>li:last-child .item {
+	border-bottom: none;
+}
+.rb-recommend-box .rb-left-box .item .ion-ios-arrow-down {
+	margin-left: 18px;
+	font-weight: bold;
+	font-size: 20px;
+	display: inline-block;
+  vertical-align: middle;
+  transition: all .4s;
+  -moz-transition: all .4s; /* Firefox 4 */
+  -webkit-transition: all .4s; /* Safari 和 Chrome */
+  -o-transition: all .4s; /* Opera */
+}
+.rb-recommend-box .rb-left-box .item .ion-ios-arrow-down.active {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
+.rb-recommend-box .rb-left-box .item.active,
+.rb-recommend-box .rb-left-box .item:hover {
+	color: #FFFFFF;
+	background: #FF8000;
+	border-color: #FF8000;
 }
 .rb-recommend-box .rb-left-box h3 {
 	line-height: 64px;
@@ -319,7 +358,10 @@
 	margin: 0;
 	padding: 0;
 }
-.rb-recommend-box .rb-left-box li a {
+.rb-recommend-box .rb-left-box .sonMenu {
+	margin-left: 15px;
+}
+.rb-recommend-box .rb-left-box .sonMenu li a {
 	width: 100%;
 	box-sizing: border-box;
 	padding-left: 15px;
@@ -328,6 +370,9 @@
 	color: #343434;
 	cursor: pointer;
 	border-bottom: 1px solid #fff;
+}
+.rb-recommend-box .rb-left-box .sonMenu img {
+	display: block;
 }
 .rb-recommend-box .rb-left-box li a span {
 	margin-left: 20px;
@@ -348,8 +393,7 @@
 }
 .rb-recommend-box .rb-left-box li a.active,
 .rb-recommend-box .rb-left-box li a:hover {
-	color: #fff;
-	background: #FF8000;
+	color: #FF8000;
 }
 .rb-recommend-box .rb-right-box {
 	width: 945px;
@@ -476,6 +520,7 @@
 	background: #fff;
 	border: 1px solid #FF8000;
 	margin-right: 10px;
+	text-decoration: none;
 }
 .rb-recommend-box .rb-right-box .good-item .content-box .buy-info .tip-box {
 	background: #FFA851;
@@ -1292,7 +1337,7 @@
 	color: #666666;
 	font-size: 14px;
 	text-align: center;
-	z-index: 999;
+	z-index: 998;
  }
  @media (min-width: 1404px) {
  	.dr-cart-slider {
