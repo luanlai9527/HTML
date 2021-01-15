@@ -504,14 +504,18 @@
 }
 
 /*代购车弹窗*/
-.rb-dgc-msg-body .img{
-	height: 220px;
-	width:220px;
-	border: 1px solid #EEEEEE;
-	margin-right: 30px;
-}
 .rb-dgc-msg-body .title {
 	font-size: 18px;
+}
+.rb-dgc-msg-body .good-img {
+	border: 1px solid #EEEEEE;
+	margin-right: 30px;
+	width: 200px;
+	height: 200px;
+}
+.rb-dgc-msg-body .good-img img {
+    max-width: 90%;
+    max-height: 90%;
 }
 .rb-dgc-msg-body .descri {
 	color: #FE2000;
