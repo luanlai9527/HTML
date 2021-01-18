@@ -553,6 +553,7 @@
 /*代购车弹窗*/
 .rb-dgc-msg-body .title {
 	font-size: 18px;
+	color: #333;
 }
 .rb-dgc-msg-body .good-img {
 	border: 1px solid #EEEEEE;
@@ -565,7 +566,7 @@
     max-height: 90%;
 }
 .rb-dgc-msg-body .descri {
-	color: #FE2000;
+	color: #7b7a7a;
 	margin-top: 5px;
 }
 .rb-dgc-msg-body .price1 {
@@ -1201,6 +1202,7 @@
 	width: 40px;
 	text-align: center;
 	margin-left: 9px;
+	font-size: 12px;
  }
  .dr-l-container .time-box .txt2{
 	color: #FF3C3C;
@@ -1223,6 +1225,9 @@
 .dr-l-container  .txt-2 {
 	font-size: 16px;
 	color: #999;
+ }
+ .dr-l-container  .txt-2  span {
+ 	margin-left: 50px;
  }
 .dr-l-container .link-box .txt3 {
 	font-size: 16px;

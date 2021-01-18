@@ -5,7 +5,7 @@
 }
 .h-c-item {
 	border-bottom: 2px solid #EEEEEE;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 .h-c-item:last-child {
 	border: none;
@@ -31,9 +31,21 @@
 	font-size: 18px;
 }
 .h-c-item-header .editor {
-	color: #7F7F7F;
-	font-size: 14px;
-}
+ 	width: 182px;
+ 	height: 60px;
+ 	line-height: 60px;
+ 	color: #FF3C3C;
+ 	text-align: center;
+ 	background: url(../../img/hdsj/time-bg1.png) no-repeat 0 0;
+ 	margin-left: 30px;
+ 	margin-top: -10px;
+ 	font-size: 14px;
+ }
+.h-c-item-header .editor.history {
+ 	background: url(../../img/hdsj/time-bg.png) no-repeat 0 0;
+ 	color: #999;
+ }
+
 .h-c-item-descri1 {
 	color: #7F7F7F;
 	font-size: 14px;
@@ -423,7 +435,7 @@
 	-webkit-box-orient: vertical;
  }
 .dr-l-container .time-box {
- 	width: 182px;
+ 	width: 220px;
  	height: 60px;
  	background: url(/static/img/dailyRecommend/time-bg1.png) no-repeat 0 0;
  	margin-left: 30px;
@@ -438,11 +450,13 @@
 	width: 40px;
 	text-align: center;
 	margin-left: 9px;
+	font-size: 12px;
  }
  .dr-l-container .time-box .txt2{
 	color: #FF3C3C;
 	text-align: center;
 	font-size: 14px;
+	margin-right: 5px;
  }
  .dr-l-container .time-box.history .txt2 {
  	color: #999999;
