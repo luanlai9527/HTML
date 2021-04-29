@@ -562,8 +562,8 @@
 	height: 200px;
 }
 .rb-dgc-msg-body .good-img img {
-    max-width: 90%;
-    max-height: 90%;
+    /*max-width: 90%;
+    max-height: 90%;*/
 }
 .rb-dgc-msg-body .descri {
 	color: #7b7a7a;
